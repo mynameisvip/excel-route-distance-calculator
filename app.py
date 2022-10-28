@@ -8,7 +8,7 @@ ORIGIN_COLUMN = "A"
 TARGET_COLUMN = "B"
 API_KEY = "YOUR_GOOGLE_MAPS_API_KEY"
 
-book = openpyxl.load_workbook(file)
+book = openpyxl.load_workbook(FILE)
 sheet = book.active
 
 
@@ -25,4 +25,4 @@ for i in range(FROM_ROW, TO_ROW):
         pass
 
 
-book.save(file)
+book.save(FILE)
